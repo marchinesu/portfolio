@@ -1,0 +1,218 @@
+/* #region ===== subpage共通スタイル ここから ===== */
+
+body {
+    background-color: #f2f2f3;
+    margin: 20px;
+    font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+    color: #333;
+}
+
+/* ページタイトル */
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0 20px;
+    border-bottom: 3px solid #8F9779;
+    padding-bottom: 6px;
+    color: #5D6151;
+}
+
+/* セクションタイトル（オレンジ線） */
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 25px 0 15px;
+    border-left: 5px solid orangered;
+    padding-left: 10px;
+    color: #5D6151;
+}
+
+/* 戻るボタン */
+.back-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #5D6151;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background-color: #8F9779;
+}
+
+.back-btn:active {
+    transform: scale(0.88);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* #endregion ===== subpage共通スタイル ここまで ===== */
+
+/* #region ===== personalworksページ用 ここから ===== */
+
+.section-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #5D6151;
+
+    border-left: 6px solid orangered;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/* ▼ 作品ボックスの見た目 */
+.work-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* 画像 */
+.work-img img {
+    display: block;
+    border-radius: 8px;
+}
+
+/* ▼ タイトル行（Webデザイン作品 + タグ） */
+.simple-term {
+    font-weight: bold;
+    color: #4a4d3d;
+    font-size: 1rem;
+}
+
+/* タグをプロフィール風に */
+.tag {
+    background: #5D6151;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+/* ▼ サイトURLリンク */
+.work-url a {
+    color: #385C3E;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.work-url a:hover {
+    color: #1f3c22;
+    text-decoration: underline;
+}
+
+/* ▼ レスポンシブ：スマホでレイアウトをまとめる */
+@media (min-width: 700px) {
+    .work-box {
+        flex-direction: row;
+        /* PCは横並び */
+        align-items: center;
+    }
+
+    .work-img {
+        flex: 0 0 250px;
+    }
+
+    .work-desc {
+        flex: 1;
+    }
+}
+
+/* ===== 横スクロールギャラリー ===== */
+.work-gallery {
+    width: 100%;
+
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 15px;
+}
+
+.gallery-container img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* スクロールバーをちょっとかわいく */
+.work-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.work-gallery::-webkit-scrollbar-thumb {
+    background: #8EA68D;
+    border-radius: 10px;
+}
+
+.work-gallery::-webkit-scrollbar-track {
+    background: #E8EDE7;
+}
+
+/* #endregion ===== personalworksページ用 ここまで ===== */
+
+/* #region ===== Careerページ用 ここから ===== */
+.tag.get {
+    background: none;
+    color: orangered !important;
+    font-weight: bold;
+}
+
+ /* 学歴・職歴の年（左側） */
+        .year {
+            font-weight: bold;
+            width: 110px;
+            flex-shrink: 0;
+            color: #5D6151;
+            /* 濃いオリーブ */
+            padding-left: 4px;
+        }
+
+        /* 学歴だけ文字が弱い問題の改善 */
+        .career-term {
+            font-weight: bold;
+            color: #5D6151;
+            /* 職歴と統一 */
+            font-size: 16px;
+        }
+
+        .career-content {
+            color: #444;
+            /* 他セクションと同一 */
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+
+        /* 行（年＋内容）のレイアウト */
+        .history-row {
+            display: flex;
+            margin-bottom: 12px;
+        }
+
+        /* 学歴・職歴の内容 */
+        .history-content {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* 表示ブロックの余白 */
+        .history-block {
+            margin-bottom: 30px;
+        }
+/* #endregion ===== Careerページ用 ここまで ===== */

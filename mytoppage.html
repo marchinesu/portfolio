@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <style>
+        body {
+            background-color: #E2D8CC;
+            margin: 0;
+        }
+
+        .subtitle {
+            z-index: 2;
+            display: block;
+            text-align: center;
+            color: rgb(94, 42, 30);
+            font-weight: bold;
+
+        }
+    </style>
+
+    <!-- ▼ 外部CSS読み込み -->
+    <link rel="stylesheet" href="./css/mytoppage.css">
+
+</head>
+
+<!-- 省略コマンド -->
+<!-- #region ===== 省略 ここから ===== -->
+<!-- #endregion ===== 省略 ここまで ===== -->
+
+<body>
+
+    <!-- #region ===== ヘッダー/サイトマップ ここから ===== -->
+    <header id="cr1" class="main-header">
+        <span id="last-update">最終更新日：読み込み中...</span>
+        <input type="checkbox" id="sitemap-toggle" hidden>
+
+        <!-- サイトマップ -->
+        <div class="toggle-title" data-type="sitemap" style="color: #5D6151;">
+            サイトマップ
+            <span class="toggle-btn">▼</span>
+        </div>
+        <div class="toggle-content" data-type="sitemap" style="display:none;">
+            <p><a class="sitemap-link" href="#cr2">Profile</a></p>
+            <p><a class="sitemap-link" href="#cr3">Career</a></p>
+            <p><a class="sitemap-link" href="#cr4">Personal Works</a></p>
+            <p><a class="sitemap-link" href="#con">Contact</a></p>
+        </div>
+
+    </header>
+    <!-- #endregion ===== ヘッダー/サイトマップ ここまで ===== -->
+
+    <!-- #region ===== タイトルエリア ここから ===== -->
+    <div class="title-area">
+        <h1 class="title">Fuchigami&nbsp;Portfolio</h1>
+        <p class="subtitle"><span>Designer / Frontend Developer</span></p>
+
+    </div>
+    <!-- #endregion ===== タイトルエリア ここまで ===== -->
+
+
+    <!-- #region ===== 更新履歴 ここから ===== -->
+    <div class="news-box">
+        <div class="news-title">更新履歴</div>
+
+        <div class="news-content">
+            <!-- ここに追加 -->
+            <p>2025/12/15 <a href="./career.html">Personal Worksページ</a>を更新しました</p>
+            <p>2025/12/12 <a href="./career.html">Personal Worksページ</a>を公開しました</p>
+            <p>2025/12/11 <a href="./career.html">Careerページ</a>を公開しました</p>
+            <p>2025/12/10 <a href="./profile.html">Profileページ</a>を公開しました</p>
+            <p>2025/12/08 トップページのデザインを更新しました</p>
+            <p>2025/12/04 トップページを公開しました</p>
+
+        </div>
+    </div>
+    <!-- #endregion ===== 更新履歴 ここまで ===== -->
+
+
+    <!-- #region ===== MENU ここから ===== -->
+    <div class="menu">
+        <ul>
+            <li><a href="./profile.html" id="cr2">Profile</a></li>
+            <li><a href="./career.html" id="cr3">Career</a></li>
+            <li><a href="./personalworks.html" id="cr4">Personal Works</a></li>
+        </ul>
+    </div>
+    <!-- #endregion ===== MENU ここまで ===== -->
+
+
+    <!-- #region ===== 問い合わせ ここから ===== -->
+    <div class="contact-box scroll-fade" id="con">
+        <h4 class="contact-title">　Contact - お問合せ -</h4>
+        <div class="contact-item scroll-fade">
+            <a href="mailto:yourmail@example.com" class="contact-icon email">
+                <img src="./img/mailimg.png" alt="メールアイコン" class="icon-img" width="30px">
+            </a>
+            <span class="contact-label">Email</span>
+        </div>
+
+        <div class="contact-item scroll-fade">
+            <a href="https://www.instagram.com/ユーザー名" target="_blank" class="contact-icon instagram">
+                📷
+            </a>
+            <span class="contact-label">Instagram</span>
+        </div>
+    </div>
+    <!-- #endregion ===== 問い合わせ ここまで ===== -->
+
+    <!-- #region ===== 先頭に戻るボタン ここから ===== -->
+    <a href="#" class="to-top">▲ 先頭に戻る</a>
+    <!-- #endregion ===== 先頭に戻るボタン ここまで ===== -->
+
+    <!-- #region ===== フッター ここから ===== -->
+    <footer class="footer">
+        <p>2025 Fuchigami Portfolio</p>
+    </footer>
+    <!-- #endregion ===== フッター ここまで ===== -->
+
+
+    <!--JavaScript読み込み -->
+    <script src="./js/mytoppage.js"></script>
+
+</body>
+
+
+</html>

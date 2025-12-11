@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- 既存CSS/JSを残す -->
+
+    <link rel="stylesheet" href="./css/subpage.css">
+
+
+    <style>
+
+        #skill-section-title {
+            margin-top: 80px;
+        }
+
+        .profile-wrapper {
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+
+        .profile-wrapper h3 {
+            margin-top: 18px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #5D6151;
+        }
+
+        .profile-wrapper p {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            color: #444;
+        }
+
+        /* スキル関連 */
+        .skill-set {
+            margin-top: 20px;
+            padding-left: 5px;
+        }
+
+        .skill-item {
+            margin-bottom: 25px;
+        }
+
+        .skill-head {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            color: #5D6151;
+        }
+
+        .skill-note {
+            margin: 2px 0;
+            font-size: 15px;
+            color: #444;
+        }
+
+        .skill-note.env {
+            color: rgb(179, 179, 179);
+        }
+
+        .stars {
+            color: #e6c300;
+            padding-right: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ページタイトル -->
+    <div class="page-title">Profile</div>
+
+    <!-- セクション -->
+    <h2 class="section-title">About Me</h2>
+
+    <div class="profile-wrapper">
+
+        <h3>Name</h3>
+        <p>名前</p>
+
+        <h3>Date of Birth</h3>
+        <p>1999/10/26</p>
+
+        <h3>Interests</h3>
+        <p>イラスト・ゲーム・ゴルフ</p>
+
+    </div>
+
+
+    <!-- ===== スキル ===== -->
+    <h2 class="section-title" id="skill-section-title">Skill</h2>
+
+    <div class="skill-set">
+
+        <div class="skill-item">
+            <div class="skill-head">
+                <span>HTML / CSS</span>
+                <span class="stars">★★★☆☆</span>
+            </div>
+            <p class="skill-note">レスポンシブ対応や基礎的な動作反映など、Webページの構築。</p>
+            <p class="skill-note" style="color: rgb(179, 179, 179);">
+                動作環境：Visual Studio Code/XAMPP(Apache,MariaDB,PHP)
+            </p>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-head">
+                <span>JavaScript</span>
+                <span class="stars">★★☆☆☆</span>
+            </div>
+            <p class="skill-note">DOM操作や簡易的な動きの実装。</p>
+            <p class="skill-note" style="color: rgb(179, 179, 179);">
+                動作環境：Eclipse(Pleiades)
+            </p>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-head">
+                <span>Photoshop</span>
+                <span class="stars">★★★★☆</span>
+            </div>
+            <p class="skill-note">画像加工、切り抜き、簡単なイラスト制作。</p>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-head">
+                <span>Excel / Word</span>
+                <span class="stars">★★★★☆</span>
+            </div>
+            <p class="skill-note">資料作成や関数を使った基本的な表作成、マクロの編集。</p>
+        </div>
+
+    </div>
+
+    <!-- トップページへ戻る -->
+    <a href="./mytoppage.html" class="back-btn">← Top Page に戻る</a>
+
+
+    <!--JavaScript読み込み -->
+    <script src="./js/mytoppage.js"></script>
+
+
+</body>
+
+</html>
